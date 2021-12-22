@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "72f606ad-8936-4196-890f-6af26da5747e",
+		"name": "Rapidex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lojas",
+			"item": [
+				{
+					"name": "Get Loja",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/Lojas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Lojas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Loja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Name\": \"Guarulhos\",\r\n\"Cnpj\": \"11884974001840\",\r\n\"NickName\": null,\r\n\"ZipCode\": null,\r\n\"Street\": \"Av. Dr. Timóteo Penteado\",\r\n\"Complement\": null,\r\n\"Number\": \"1232\",\r\n\"Neighborhood\": \"Vila Hulda\",\r\n\"City\": \"Guarulhos\",\r\n\"State\": \"SP\",\r\n\"Phone\": \"1120871614\",\r\n\"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/lojas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"lojas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Loja",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/lojas/22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"lojas",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Loja true or false",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/Lojas/active/false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Lojas",
+								"active",
+								"false"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Veiculos",
+			"item": [
+				{
+					"name": "Get Veiculo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/veiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"veiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Veiculo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Nome\": \"Punto Attractive\",\r\n\"Lojas\" : {\r\n    \"id\": 30,\r\n    \"name\": \"Guarulhos\",\r\n    \"cnpj\": \"11884974001840\",\r\n    \"nickName\": null,\r\n    \"zipCode\": null,\r\n    \"street\": \"Av. Dr. Timóteo Penteado\",\r\n    \"complement\": null,\r\n    \"number\": \"1232\",\r\n    \"neighborhood\": \"Vila Hulda\",\r\n    \"city\": \"Guarulhos\",\r\n    \"state\": \"SP\",\r\n    \"phone\": \"1120871614\",\r\n    \"active\": true\r\n}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/veiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"veiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Veiculo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/lojas/22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"lojas",
+								"22"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Leads",
+			"item": [
+				{
+					"name": "Get Leads",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/Leads",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Leads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Leads",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Lojas\": \r\n{   \r\n    \"id\": 12,\r\n    \"name\": \"Guarulhos\",\r\n    \"cnpj\": \"11884974001840\",\r\n    \"nickName\": null,\r\n    \"zipCode\": null,\r\n    \"street\": \"Av. Dr. Timóteo Penteado\",\r\n    \"complement\": null,\r\n    \"number\": \"1232\",\r\n    \"neighborhood\": \"Vila Hulda\",\r\n    \"city\": \"Guarulhos\",\r\n    \"state\": \"SP\",\r\n    \"phone\": \"1120871614\",\r\n    \"active\": true\r\n},\r\n\"Name\": \"Leonardo Mesquita\",\r\n\"Cpf\" : 123\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/leads",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"leads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Leads",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/lojas/22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"lojas",
+								"22"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
